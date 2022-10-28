@@ -9,6 +9,8 @@ extern crate log;
 
 use pretty_env_logger::env_logger;
 
+/// This module contain the generator code
+pub mod dante;
 /// This module contain all utils
 pub mod utils;
 

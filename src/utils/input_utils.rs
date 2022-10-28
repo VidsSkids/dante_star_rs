@@ -43,11 +43,14 @@ where
 ///
 /// # Return
 ///
-/// First i32 is the height of the maze
+/// First i32 is the height of the maze<br>
 /// Second i32 is the width
 pub fn get_user_input() -> (i32, i32) {
     let height = get_one_argument::<i32>("height");
     let width = get_one_argument::<i32>("width");
-
+    if height < 1 || width < 1 {
+        error!("{}", "Height and width must greater than 1".bold().red());
+        return get_user_input();
+    }
     (height, width)
 }
