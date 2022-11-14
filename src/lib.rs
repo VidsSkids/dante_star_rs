@@ -6,10 +6,10 @@
 
 #[macro_use]
 extern crate log;
-#[macro_use]
-extern crate lazy_static;
 
 use pretty_env_logger::env_logger;
+
+use lazy_static as _;
 
 /// This module contain the generator code
 pub mod dante;
