@@ -7,8 +7,10 @@
 use lib::init_log;
 
 use colored as _;
+use lazy_static as _;
 use log as _;
 use pretty_env_logger as _;
+use rand as _;
 
 fn main() {
     init_log();

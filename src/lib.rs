@@ -6,6 +6,8 @@
 
 #[macro_use]
 extern crate log;
+#[macro_use]
+extern crate lazy_static;
 
 use pretty_env_logger::env_logger;
 
